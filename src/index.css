@@ -1,0 +1,50 @@
+.container {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.todos-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: circle;
+    gap: 10px;
+}
+
+.todos-list li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+    border: 1px solid black;
+    position: relative;
+    z-index: 2;
+}
+
+.todos-list li button {
+    position: relative;
+    z-index: 1;
+}
+
+.todos-list li div {
+    display: flex;
+    flex-direction: column;
+}
+
+.app__inputs {
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+}
